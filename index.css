@@ -1,80 +1,208 @@
-*{
-    /**background-color: #1F2937;**/
-    /**height: 10vh;**/
+body,
+.top,
+.second,
+.third,
+.image-subtext,
+.fourth-text{
+    display : flex;
+    flex-direction: column;
+
 }
-.navbar{
+
+.header,
+.first,
+.images-second,
+.fourth,
+.links{
     display: flex;
-    background-color: #1F2937;
-    height: 150px;
-    justify-content: flex-end;
 }
-.navbar-item {
-    text-align: right;
-    margin: 10px;
-    padding: 5px;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
+
+.second-header{
+    text-align: center;
+}
+.image-subtext p{
+    width:180px;
+    text-align: center;   
     font-family: 'Courier New', Courier, monospace;
-}
-.awesome{
-    display: flex;
-    color: aliceblue;
-    background-color: #1F2937;
-    height: 50vh;
-    font-size: 33px;
-}
-.awesome img{
-    flex-basis: 300px;
-    /**width: 300px;**/
-    height: 200px;
-    justify-content: flex-end;
-    position: relative;
-    left: 250px;
-    top: -20px;
-
-}
-.awesome h2{
-    font-size: 30px;
-    position: relative;
-    right: -100px;
-}
-.para{
-    display: flex;
-}
-.para p{
-    color: aliceblue;
-    position: relative;
-    top: -150px;
-    right: -100px;
+    font-weight: 700;
 }
 
-button{
+.images-second
+{
+    margin-left: auto;
+    margin-right: auto;
+    gap:20px;
+}
+.image-subtext img{
+    height:200px;
+    border-radius: 10px;
+    border:solid blue 2px;
+    width:200px;
+}
+
+
+.links{
+    gap:15px;
+    margin-top:20px;
+}
+body{
+    margin:0px;
+}
+.top,
+.footer{
+background-color: #1F2937;
+}
+
+
+.placeholder img{
+    text-align: center;
+    color:#F9FAF8;
+    width:500px;
+    height:200px;
+    background-color: gray;
+}
+
+.placeholder p{
+    margin:90px 0 0 0;
+}
+.links a{
+text-decoration: none;
+font-size: 18px;
+color:#E5E7EB;
+}
+
+.first-container{
+    padding-bottom: 100px;
+    width:470px;
+}
+.header{
+    gap:450px;
+}
+.first{
+    gap:100px;
+    align-items: center;
+}
+
+.top{
+    align-items: center;
+}
+
+.first-header
+{
+    font-size:48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.first-header-subtext{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.logo img{
+
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    
+    color:#F9FAF8;
+}
+
+.first-button{
+    background-color:#3882F6;
+    border: 0px;
+    border-radius: 10px;
+    color:#F9FAF8;
+    padding:0;
+    width:100px;
+    height:30px;
+}
+
+.second-header{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:36px;
+    font-weight: 900;
+    color:#1F2937
+}
+
+.third{
+    background-color: #E5E7EB;
+    justify-content: center;
+}
+.quote{
+    margin-top:90px;
+    margin-bottom:5px;
+    font-size: 36px;
+    font-style:italic;
+    font-weight:400;
+    color:#1F2937
+}
+
+.quoter{
+    font-size: 23px;
+    font-weight: bold;
+    flex-basis: 200px;
+    position: relative;
+    left: 180px;
+    bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.fourth{
+   
     background-color: #3882F6;
-    border: none;
-    border-radius: 5px;
-    width: 80px;
-    height: 30px;
-    position: relative;
-    right: -100px;
-    top: -150px;
-}
-button .butt{
-    color: white;
+    color:#F9FAF8;
+    border-radius:8px;
+    
 }
 
-.random h2{
-    position: relative;
-    right: -300px;
-    top: -50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+.third{
+    text-align: center;
 }
 
-.newflex-container{
+.quoter{
+    padding-left:150px;
+}
+.fourth-header{
+    font-weight: bold;
+    font-size: 23px;
+    margin:40px 0 0 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fourth-subtext{
+    margin:0 0 40px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fourth{
+    margin:80px 150px 80px 150px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    height:140px;
+    width:1000px;
+}
+
+.fourth-button{
+    align-self: center;
+    padding:5px 25px 5px 25px;
+    color:#F9FAF8;
+    background-color: #3882F6;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.footer{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
 }
-.newflex-container div img{
-    flex: 1;
-    flex-basis: 60px;
+.footer p{
+
+    color: #F9FAF8;
+    font-size:10px;
 }
+
